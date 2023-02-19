@@ -1,0 +1,17 @@
+<div class="page">
+    <div class="sidebar_left">
+        <app-heading title="To Do List"></app-heading>
+    </div>
+    <div class="main_content">
+        <div class="main_content_placeholder" *ngIf="data.length==0">
+            There are no To-do Lists.<br /> Tap on Create to make one.
+        </div>
+        <div *ngFor="let item of data">
+            <app-list-item [name]="item.name" [id]="item
+            .id"></app-list-item>
+        </div>
+    </div>
+    <div class="sidebar_right">
+        <a href="/create/list" mat-raised-button color="primary"><mat-icon>add</mat-icon>CREATE</a>
+    </div>
+</div>

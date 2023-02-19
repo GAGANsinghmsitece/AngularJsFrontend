@@ -1,0 +1,20 @@
+.signup_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup {
+    width: 600px;
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.signup button {
+    font-family: 'Bree Serif', serif;
+}

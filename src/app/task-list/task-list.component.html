@@ -1,0 +1,16 @@
+<div class="page">
+    <div class="sidebar_left">
+        <app-heading [title]="heading" [description]="description"></app-heading>
+    </div>
+    <div class="main_content">
+        <div class="main_content_placeholder" *ngIf="data.length==0">
+            There are no Tasks.<br /> Tap on Create to make one.
+        </div>
+        <div *ngFor="let item of data">
+            <app-task [listId]="listId" [id]="item.id" [name]="item.name" [isCompleted]="item.completed" />
+        </div>
+    </div>
+    <div class="sidebar_right">
+        <a href="/create/task/{{listId}}" mat-raised-button color="primary"><mat-icon>add</mat-icon>CREATE</a>
+    </div>
+</div>

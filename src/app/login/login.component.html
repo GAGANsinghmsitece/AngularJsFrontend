@@ -1,0 +1,19 @@
+<div class="login_container">
+    <app-form-heading heading="Login"></app-form-heading>
+    <form class="login" [formGroup]="loginForm">
+        <mat-form-field>
+            <mat-label>
+                Email:
+            </mat-label>
+            <input matInput id="email" type="email" formControlName="email">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>
+                Password:
+            </mat-label>
+            <input matInput id="password" type="password" formControlName="password">
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" (click)="onSubmit()">Login</button>
+    </form>
+</div>

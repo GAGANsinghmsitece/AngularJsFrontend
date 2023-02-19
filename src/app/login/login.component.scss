@@ -1,0 +1,20 @@
+.login_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    width: 600px;
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.login button {
+    font-family: 'Bree Serif', serif;
+}

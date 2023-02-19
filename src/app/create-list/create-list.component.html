@@ -1,0 +1,14 @@
+<div class="create_list_container">
+    <app-form-heading heading="Create List"></app-form-heading>
+    <form class="create_list" [formGroup]="createList">
+        <mat-form-field>
+            <mat-label>Name:</mat-label>
+            <input matInput id="name" type="text" formControlName="name">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Description</mat-label>
+            <input matInput id="description" type="text" formControlName="description">
+        </mat-form-field>
+        <button mat-raised-button color="primary" (click)="onSubmit()">Create List</button>
+    </form>
+</div>

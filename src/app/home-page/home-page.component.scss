@@ -1,0 +1,36 @@
+.home_page {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25%;
+    align-items: center;
+}
+
+.button_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.button_container a {
+    font-family: 'Bree Serif', serif;
+}
+
+.home_heading {
+    padding: 20px;
+    font-size: 38px;
+    font-weight: 500;
+    height: auto;
+    font-family: 'Bree Serif', serif;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Bree Serif', serif;
+}

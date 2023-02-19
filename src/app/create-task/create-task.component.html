@@ -1,0 +1,10 @@
+<div class="create_task_container">
+    <app-form-heading heading="Create Task"></app-form-heading>
+    <form class="create-task" [formGroup]="createTask">
+        <mat-form-field>
+            <mat-label>Task</mat-label>
+            <input matInput id="name" type="text" formControlName="name">
+        </mat-form-field>
+        <button mat-raised-button color="primary" (click)="onSubmit()">Create Task</button>
+    </form>
+</div>

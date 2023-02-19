@@ -1,0 +1,18 @@
+<div class="signup_container">
+    <app-form-heading heading="Signup"></app-form-heading>
+    <form class="signup" [formGroup]="signUpForm">
+
+        <mat-form-field>
+            <mat-label>Email:</mat-label>
+            <input matInput placeholder="Email" formControlName="email" id="email" type="email">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Password:</mat-label>
+            <input matInput placeholder="Password" formControlName="password" id="password" type="password">
+        </mat-form-field>
+        <button mat-raised-button color="primary" (click)="onSubmit()">
+            Signup
+        </button>
+
+    </form>
+</div>
