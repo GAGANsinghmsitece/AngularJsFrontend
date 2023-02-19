@@ -36,7 +36,6 @@ export class LoginComponent {
           this.loginForm.value
         ).subscribe((response) => {
           if (response.status === true) {
-            console.log(response);
             token.setToken(response.token);
             this.authService.navigateToHomePage();
           }

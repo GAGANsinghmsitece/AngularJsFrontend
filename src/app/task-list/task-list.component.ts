@@ -35,7 +35,6 @@ export class TaskListComponent {
         )
         .subscribe((response) => {
           if (response.status === true) {
-            console.log(response);
             this.heading = response.item.name;
             this.description = response.item.description;
             this.data = response.item.listItems;

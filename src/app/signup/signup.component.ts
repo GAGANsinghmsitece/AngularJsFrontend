@@ -40,6 +40,7 @@ export class SignupComponent {
           .subscribe((response) => {
             if (response?.status === true) {
               token.setToken(response?.token);
+              this.authService.navigateToHomePage();
             }
           })
       }

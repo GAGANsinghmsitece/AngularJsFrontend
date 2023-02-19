@@ -30,7 +30,6 @@ export class ListTodoComponent {
         .subscribe((response) => {
           if (response?.status === true) {
             this.data = response?.items;
-            console.log(this.data);
           }
         });
     } catch (err: any) {
